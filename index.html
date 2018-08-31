@@ -25,6 +25,26 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
+					<p>On Data Banks and Privacy Homomorphisms</p>
+					<p>Ronald L Rivest</p>
+					<p>Len Adleman</p>
+					<p>Michael L. Dertouzos</p>
+				</section>
+				<section>
+					<section>
+						<img src='rsa.png'/>
+						<!-- source: http://techdrag.blogspot.com/2010/05/famous-cryptographers-who-proposed-rsa.html -->
+						<small>A Method for Obtaining Digital Signatures and Public-Key Cryptosystems (ACM '78)</small>
+						</br>
+						<small>Rivest, Shamir, Adleman</small>
+						<aside class="notes">
+							While they have the ear of the entire security community,
+							they publish a speculative paper that outlines the basics of a technology
+							that still hasn't seen wide use 40 years later.
+						</aside>
+					</section>
+				</section>
+				<section>
 					<section>
 						<p>End-to-end Encryption</p>
 						<img src='figure1.png'/>
@@ -43,59 +63,85 @@
 					<section>
 						<span>
 							<img height="158" width="133" src='diamond-glove-box-with-key.png'>
+							<br/>
 							<ol>
-								<li>Alice locks diamonds in the box</li>
-								<li>Eve refines diamonds with gloves</li>
-								<li>Alice unlocks refined diamonds</li>
+								<li class='fragment'>Alice locks diamonds in the box</li>
+								<li class='fragment'>Eve refines diamonds with gloves</li>
+								<li class='fragment'>Alice unlocks refined diamonds</li>
 							</ol>
 						</span>
 					</section>
 				</section>
 				<section>
 					<section>
-						Algebraic System
-							<p>(S: +, *, ==, λ x → x == 0)</p>
+						Applications
 					</section>
 					<section>
-						<p>Algebraic system pair (U, C) with mapping &#981;</p> <!-- phi -->
-						<img src='./U-and-C.png'>
+						Database as a Service
+					</section>
+					<section>
+						Alexa
+					</section>
+					<section>
+						<p>Secure Voting</p>
+						<img src='rivest-youtube.png'/>
+					</section>
+				</section>
+				</section>
+				<section>
+					<section>
+						<p>Homomorphism</p>
+						<p class='fragment'>"same shape"</p>
+					</section>
+					<section>
+						<pre>
+							<math>
+                    f(x * y) = f(x) *' f(y)
+							</math>
+						</pre>
+						<p class='fragment'>f is the encryption function</p>
+						<p class='fragment'>* is some useful computation</p>
 					</section>
 				</section>
 				<section>
-					<p>Homomorphism</p>
+					<section>
+						<p>Security Considerations</p>
+					</section>
+					<section>
+						<p>Dangerous Comparisons: "most severe restriction"</p>
+						<img src='fact1.png'/>
+					</section>
+					<section>
+						<p>Dangerous Comparisons: Binary Search</p>
+					</section>
+					<section>
+						<p>Choosen Plaintext Attack</p>
+						<img src='rivest-dialogue.png'>
+					</section>
 				</section>
 				<section>
-					<p>Security Considerations</p>
+					<section>
+						<p>RSA</p>
+					</section>
 				</section>
 				<section>
-					<p>1. Dangerous Comparisons</p>
-					<p>"most severe restriction"</p>
-				</section>
-				<section>
-					<img src='fact1.png'/>
-				</section>
-				<section>
-					<p>Binary Search</p>
-				</section>
-				<section>
-					<p>Choosen Plaintext Attack</p>
-				</section>
-				<section>
-					<img src='rivest-dialogue.png'>
-				</section>
-				<section>
-					<img src='open-question.png'/>
-				</section>
-				<section>
-					<p>Gentry, 2009:</p>
-					<p>FHE scheme that is CPA secure</p>
-				</section>
-				<section>
-					<h3>Current Limitations</h3>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-					</ul>
+					<section>
+						<p>Future</p>
+					</section>
+					<section>
+						<img src='open-question.png'/>
+					</section>
+					<section>
+						<p>Gentry, 2009:</p>
+						<p>FHE scheme that is CPA secure</p>
+					</section>
+					<section>
+						<h3>Current Limitations</h3>
+						<ul>
+							<li>No order here</li>
+							<li>Or here</li>
+						</ul>
+					</section>
 				</section>
 			</div>
 		</div>
