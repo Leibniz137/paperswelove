@@ -139,11 +139,23 @@
 						<p>Security Considerations</p>
 					</section>
 					<section>
-						<p>Dangerous Comparisons: "most severe restriction"</p>
-						<img src='fact1.png'/>
+						<p>Binary Search with &#8804;</p>
+						<p>"most severe restriction"</p>
+						<img height="186" width="1158" src='fact1.png'/>
 					</section>
 					<section>
-						<p>Dangerous Comparisons: Binary Search</p>
+						<p>Binary Search with &#8804;</p>
+						<p>Enc(x) = (-2)x</p>
+						<p>Given Enc function, find pt where Enc(pt) = -8</p>
+						<p class='fragment'>Enc(0) &#8804;' Enc(pt) = 0 &#8804;' -8 = false</p>
+						<p class='fragment'>Enc(10) &#8804;' Enc(pt) = -20 &#8804;' -8 = true</p>
+						<p class='fragment'>Enc(5) &#8804;' Enc(pt) = -10 &#8804;' -8 = true</p>
+						<p class='fragment'>Enc(3) &#8804;' Enc(pt) = -6 &#8804;' -8 = false</p>
+						<p class='fragment'>&#8718;</p>
+					</section>
+					<section>
+						<p>Choosen Plaintext Attack</p>
+						<img style='background:none; border:none; box-shadow:none;' src='rabin-cpa-dialogue.png'>
 					</section>
 					<section>
 						<p>Choosen Plaintext Attack</p>
@@ -165,16 +177,16 @@
 					<section>
 						<p>Semantic Security</p>
 						<ul>
-							<li>Goldwasser, Micali (1982)</li>
 							<li>Formal Definition of Security</li>
+							<li>Goldwasser, Micali (1982)</li>
 							<li>Security based on computational complexity of Eve's decryption task</li>
-							<li>RSA is not semantically secure</li>
+							<li>RSA is not semantically secure, vulnerable to CPA</li>
 						</ul>
 					</section>
 					<section>
 						<h3>Limitations</h3>
 						<ul>
-							<li>Choosen Ciphertext Security</li>
+							<li>Lack of Choosen Ciphertext Security</li>
 							<li>No Random Access</li>
 							<li>ciphertext size >> plaintext size</li>
 							<li>Noise</li>
