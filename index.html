@@ -43,6 +43,13 @@
 							that still hasn't seen wide use 40 years later.
 						</aside>
 					</section>
+					<section>
+						<p>And Dertouzos!</p>
+						<img src="dertouzos.jpg"/>
+						<aside class="notes">
+							Berners-Lee said, "If it hadn't been for Michael, there would not probably have been a World Wide Web Consortium.
+						</aside>
+					</section>
 				</section>
 				<section>
 					<section>
@@ -108,12 +115,23 @@
 						<p>RSA</p>
 					</section>
 					<section>
-						<p>Encryption function:</p>
-						<pre>
-							<math>
-                  	c &#8801; m^e mod n
-							</math>
-						</pre>
+						<p>Public Key CryptoSystem</p>
+					</section>
+					<section>
+						<p>Encryption:</p>
+						<p>
+            $$c\equiv m^e \pmod n$$
+						</p>
+						<p>Decryption:</p>
+						<p>
+						$$c^d\equiv (m^e)^d\equiv m\pmod n$$
+						</p>
+					</section>
+					<section>
+						<p>RSA Homomorphism:</p>
+						<p>
+            $$(m_1 * m_2)^e = m_1^e * m_2^e$$
+					</p>
 					</section>
 				</section>
 				<section>
@@ -134,19 +152,10 @@
 				</section>
 				<section>
 					<section>
-						<p>Future</p>
+						<p>Future (Now)</p>
 					</section>
 					<section>
-						<img src='open-question.png'/>
-					</section>
-					<section>
-						<p>Semantic Security</p>
-						<ul>
-							<li>Formal Definition of Security</li>
-							<li>Security based on computational complexity of Eve's decryption task</li>
-							<li>RSA is not semantically secure</li>
-							<li>Goldwasser, Micali (1982)</li>
-						</ul>
+						<img height="78" width="770" src='open-question.png'/>
 					</section>
 					<section>
 						<p>Fully Homomorphic Encryption scheme</p>
@@ -154,23 +163,35 @@
 						<p>Gentry (2009)</p>
 					</section>
 					<section>
-						<h3>Current Limitations</h3>
+						<p>Semantic Security</p>
+						<ul>
+							<li>Goldwasser, Micali (1982)</li>
+							<li>Formal Definition of Security</li>
+							<li>Security based on computational complexity of Eve's decryption task</li>
+							<li>RSA is not semantically secure</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Limitations</h3>
 						<ul>
 							<li>Choosen Ciphertext Security</li>
 							<li>No Random Access</li>
 							<li>ciphertext size >> plaintext size</li>
+							<li>Noise</li>
 						</ul>
 					</section>
 				</section>
 				<section>
-					Thank Yous
-				</section>
-				<section>
-					<p>See Also:</p>
-					<ul>
-						<li><a href="https://www.youtube.com/watch?v=wXB-V_Keiu8">Public Key Crypography, Khan Academy</a><li>
-						<li><a href="https://www.youtube.com/watch?v=xlcb_G1_rzk">Fully Homomorphic Encryption I, Shai Helevi</a></li>
-					</ul>
+					<section>
+						Thanks!
+					</section>
+					<section>
+						<p>See Also:</p>
+						<ul>
+							<li><a href="https://www.youtube.com/watch?v=wXB-V_Keiu8">Public Key Crypography, Khan Academy</a><li>
+							<li><a href="https://www.youtube.com/watch?v=xlcb_G1_rzk">Fully Homomorphic Encryption I, Shai Helevi</a></li>
+						</ul>
+					</section>
 				</section>
 			</div>
 		</div>
@@ -185,6 +206,7 @@
 			Reveal.initialize({
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/math/math.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
