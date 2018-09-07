@@ -87,12 +87,19 @@
 						Database as a Service
 					</section>
 					<section>
-						Alexa
+						Machine Translation
+					</section>
+					<section>
+						Medical Diagnosis
 					</section>
 					<section>
 						<p>Secure Voting</p>
 						<img src='rivest-youtube.png'/>
 					</section>
+					<section>
+						Crowd Sourced Hedge Funds
+						<img src='numerai.png'/>
+					</sections>
 				</section>
 				</section>
 				<section>
@@ -108,6 +115,9 @@
 						</pre>
 						<p class='fragment'>f is the encryption function</p>
 						<p class='fragment'>* is some useful computation</p>
+					</section>
+					<section>
+						<img src='./commutative-diagram.png'/>
 					</section>
 				</section>
 				<section>
@@ -145,52 +155,51 @@
 						<img height="186" width="1158" src='fact1.png'/>
 					</section>
 					<section>
-						<p>Binary Search with &#8804;</p>
-						<p>Enc(x) = (-2)x</p>
-						<p>Given Enc function, find pt where Enc(pt) = -8</p>
-						<p class='fragment'>Enc(0) &#8804;' Enc(pt) = 0 &#8804;' -8 = false</p>
-						<p class='fragment'>Enc(10) &#8804;' Enc(pt) = -20 &#8804;' -8 = true</p>
-						<p class='fragment'>Enc(5) &#8804;' Enc(pt) = -10 &#8804;' -8 = true</p>
-						<p class='fragment'>Enc(3) &#8804;' Enc(pt) = -6 &#8804;' -8 = false</p>
+						<p>Given:</p>
+						<p>$$Enc(x) = (-2)x$$</p>
+						<p>$$Enc(pt) = -8$$</p>
+						<p class='fragment'>$$Enc(0) &#8804;' Enc(pt) = 0 &#8804;' -8 = false$$</p>
+						<p class='fragment'>$$Enc(10) &#8804;' Enc(pt) = -20 &#8804;' -8 = true$$</p>
+						<p class='fragment'>$$Enc(5) &#8804;' Enc(pt) = -10 &#8804;' -8 = true$$</p>
+						<p class='fragment'>$$Enc(3) &#8804;' Enc(pt) = -6 &#8804;' -8 = false$$</p>
 						<p class='fragment'>&#8718;</p>
 					</section>
 					<section>
 						<p>Choosen Plaintext Attack</p>
+						<img src="M_O_Rabin.png"/>
 						<img style='background:none; border:none; box-shadow:none;' src='rabin-cpa-dialogue.png'>
 					</section>
 					<section>
 						<p>Choosen Plaintext Attack</p>
-						<img src='rivest-dialogue.png'>
-					</section>
-				</section>
-				<section>
-					<section>
-						<p>Future (Now)</p>
-					</section>
-					<section>
-						<img height="78" width="770" src='open-question.png'/>
-					</section>
-					<section>
-						<p>Fully Homomorphic Encryption scheme</p>
-						<p>"Fully": </p>
-						<p>Gentry (2009)</p>
+							<img src='rivest-dialogue.png'>
 					</section>
 					<section>
 						<p>Semantic Security</p>
 						<ul>
-							<li>Formal Definition of Security</li>
+							<li>Formal yet practical definition of security</li>
 							<li>Goldwasser, Micali (1982)</li>
-							<li>Security based on computational complexity of Eve's decryption task</li>
-							<li>RSA is not semantically secure, vulnerable to CPA</li>
+							<li>Measure security as computational complexity of decryption task</li>
+							<li>Basic RSA is not semantically secure</li>
+							<li>Deterministic encryption schemes in general are not semantically secure</li>
 						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<img height="78" width="770" src='open-question.png'/>
+					</section>
+					<section>
+						<p>Semantically Secure Fully Homomorphic Encryption scheme</p>
+						<p>"Efficiently" compute any function on ciphertext</p>
+						<p>Gentry (2009)</p>
 					</section>
 					<section>
 						<h3>Limitations</h3>
 						<ul>
 							<li>Lack of Choosen Ciphertext Security</li>
 							<li>No Random Access</li>
-							<li>ciphertext size >> plaintext size</li>
-							<li>Noise</li>
+							<li>len(Ciphertext) >> len(Plaintext)</li>
+							<li>Noise growth during computation</li>
 						</ul>
 					</section>
 				</section>
